@@ -1,20 +1,20 @@
 import { BasePage } from "../utils/BasePage";
 import { Locator } from "@playwright/test";
 
-export class Homepage extends BasePage{
+export class HomePage extends BasePage{
      async ClickMenu () {
-        await this.ClickElement(this.page.getbyrole('button', { name: 'Menu' }));   
+        await this.ClickElement(this.page.getByRole('button', { name: 'Menu' }));   
      }
 
      async ClickMyProfile (){
-        await this.ClickElement(this.page.getbyrole('button', { name: 'My Profile' }));
+        await this.ClickElement(this.page.getByRole('button', { name: 'My Profile' }));
      }
     
      async ClickEditProfile (){
-        await this.ClickElement(this.page.getbyrole('button', { name: 'Edit Profile' }))
+        await this.ClickElement(this.page.getByRole('button', { name: 'Edit Profile' }))
      }
 
      async EditGitProfileName (gitusername: string ){
-        await this.EnterText(this.page.getbyplaceholder('e.g., octocat'), gitusername)
+        await this.EnterText(this.page.getByPlaceholder('e.g., octocat'), gitusername)
      }
     }
