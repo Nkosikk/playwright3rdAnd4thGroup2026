@@ -15,4 +15,15 @@ test.describe('Login Tests', () => {
         await loginPage.userLogin(validUsers.studentUser.username, validUsers.studentUser.password);
 
     });
+
+    test('User should be able to view profile', async ({ homePage }) => {
+        await homePage.ClickMenu();
+        await homePage.ClickMyProfile();
+        await homePage.ClickEditProfile();
+        await homePage.EditGitProfileName(validUsers.gitusername.mygitusername);
+    });
 });
+
+
+
+    
