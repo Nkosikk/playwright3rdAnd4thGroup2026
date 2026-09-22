@@ -18,3 +18,6 @@ export const test = base.extend<CustomFixtures>({
         await use(new HomePage(page));
     }
 });
+
+// Load authentication state for tests
+test.use({ storageState: 'playwright/.auth/user.json' });

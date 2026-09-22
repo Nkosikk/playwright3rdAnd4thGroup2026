@@ -1,0 +1,46 @@
+{
+  "cookies": [],
+  "origins": [
+    {
+      "origin": "https://ndosisimplifiedautomation.vercel.app",
+      "localStorage": [
+        {
+          "name": "lastActivityAt",
+          "value": "1790100039995"
+        },
+        {
+          "name": "user",
+          "value": "{\"id\":\"d4f1a470-54a2-4154-b533-c87d3e49b2cc\",\"firstName\":\"admin\",\"lastName\":\"admin\",\"email\":\"admin@gmail.com\",\"role\":\"admin\",\"groupId\":\"cdc7d817-b518-4d0c-a9fa-b8ae0585cd64\",\"groupName\":\"20 Testingmine Class\",\"approvalStatus\":\"approved\",\"createdAt\":\"2026-07-24 21:36:12\",\"updatedAt\":\"2026-09-22 19:46:52\"}"
+        },
+        {
+          "name": "isAdmin",
+          "value": "true"
+        },
+        {
+          "name": "userProfilePicture",
+          "value": "/APIDEV/uploads/profile-images/d4f1a470-54a2-4154-b533-c87d3e49b2cc_1789666085_6939e351.jpg"
+        },
+        {
+          "name": "userFirstName",
+          "value": "admin"
+        },
+        {
+          "name": "ndosi_session_id",
+          "value": "c850ac71-9910-468d-843d-5fc2ec0d83d1"
+        },
+        {
+          "name": "userEmail",
+          "value": "admin@gmail.com"
+        },
+        {
+          "name": "userLastName",
+          "value": "admin"
+        },
+        {
+          "name": "authToken",
+          "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOiJkNGYxYTQ3MC01NGEyLTQxNTQtYjUzMy1jODdkM2U0OWIyY2MiLCJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsInNlc3Npb25JZCI6ImQ4N2E4NjA4LTQxMGUtNDkxMi1hYzMwLWUzZWIwZjlkMjE2NyIsImlhdCI6MTc5MDEwMDAzOSwiZXhwIjoxNzkwMTg2NDM5fQ.3FBhJkAPqOWdgSBa_JID31wtwNXK-TtK2Ufvw7H5slQ"
+        }
+      ]
+    }
+  ]
+}

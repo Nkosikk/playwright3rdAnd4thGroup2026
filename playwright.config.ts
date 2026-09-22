@@ -20,7 +20,11 @@ export default defineConfig({
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: 'html',
+  reporter: [
+    ['html'],
+    ['line'],
+    ['allure-playwright', { resultsDir: 'allure-results' }],
+  ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
@@ -34,10 +38,16 @@ export default defineConfig({
   /* Configure projects for major browsers */
   projects: [
     {
+      name: 'setup', // Project identifier for setup/authentication tasks, you can name this project anything you like
+      testDir: './Setup', // Directory containing setup test files
+      testMatch: /.*\.setup\.ts/, // Matches files ending with .setup.ts (e.g., auth.setup.ts)
+    },
+    {
       name: 'chromium',
       use: { ...devices['Desktop Chrome'] },
+      dependencies: ['setup'],
     },
-
+    
     // {
     //   name: 'firefox',
     //   use: { ...devices['Desktop Firefox'] },
