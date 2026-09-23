@@ -1,5 +1,5 @@
-import { LoginPage } from "../../Pages/LoginPage";
-import { validUsers } from "../../testdata/TestData";
+import { LoginPage } from "../Pages/LoginPage";
+import { validUsers } from "../testdata/TestData";
 import { test as setup } from '@playwright/test';
 
 
