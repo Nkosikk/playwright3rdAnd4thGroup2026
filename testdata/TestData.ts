@@ -11,6 +11,7 @@ export const validUsers={
     },
 
     gitusername:{
+
         mygitusername: 'lydia-tlou'
     }
-}
+};
