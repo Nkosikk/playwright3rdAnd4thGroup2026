@@ -34,9 +34,18 @@ export default defineConfig({
   /* Configure projects for major browsers */
   projects: [
     {
+      name: 'setup', // Project identifier for setup/authentication tasks,you can name this project anything you like
+      testDir: './Setup', // Directory containing setup test files 
+      testMatch: /.*\.setup\.ts/, // Matches files ending with setup.ts (e.g., auth.setup.ts)
+    },
+
+    {
+
       name: 'chromium',
       use: { ...devices['Desktop Chrome'] },
+      dependencies: ['setup'],
     },
+  ]
 
     // {
     //   name: 'firefox',
@@ -67,7 +76,7 @@ export default defineConfig({
     //   name: 'Google Chrome',
     //   use: { ...devices['Desktop Chrome'], channel: 'chrome' },
     // },
-  ],
+  
 
   /* Run your local dev server before starting the tests */
   // webServer: {
