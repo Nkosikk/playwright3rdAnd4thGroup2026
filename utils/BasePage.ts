@@ -12,6 +12,7 @@ export class BasePage{
 
     async ClickElement(locator: Locator){
         await locator.click();
+        
     }
     
     async EnterText(locator: Locator, text: string){
